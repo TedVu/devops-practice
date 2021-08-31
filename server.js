@@ -8,3 +8,7 @@ app.get("/", (req, res) => {
 app.listen(3000, () => {
   console.log("My RESTAPI running on port 3000");
 });
+
+app.get("/user", (req, res) => {
+  res.send("Hello User\n");
+});
